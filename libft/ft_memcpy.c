@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 06:41:41 by ysharma           #+#    #+#             */
-/*   Updated: 2019/05/28 06:46:17 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/05/29 10:38:45 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*dest;
 	const char	*source;
 
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	i = 0;
-	dest = dst;
-	source = src;
+	dest = (char *)dst;
+	source = (const char *)src;
 	while (i < (int)n)
 	{
 		dest[i] = source[i];

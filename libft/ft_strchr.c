@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:46:45 by ysharma           #+#    #+#             */
-/*   Updated: 2019/05/23 13:00:37 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/05/29 15:06:24 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char*)s + i);
 		i++;
 	}
+	if (s[i] == '\0' && (char)c == '\0')
+		return ((char*)s + i);
 	return (NULL);
 }
