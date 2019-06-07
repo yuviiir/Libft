@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:43:23 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/05 12:50:38 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/07 13:04:51 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,9 +78,9 @@ void	*ft_memalloc(size_t size);
 
 void	ft_memdel(void **ap);
 
-void	fp_putchar_fd(char c, int fd);
+void	ft_putchar_fd(char c, int fd);
 
-void	fp_putchar(char c);
+void	ft_putchar(char c);
 
 void	ft_putendl_fd(char const *s, int fd);
 

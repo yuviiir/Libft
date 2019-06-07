@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 06:36:19 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/05 13:09:41 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/07 08:41:40 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		str[i++] = s1[j++];
 	j = 0;
 	while (s2[j] != '\0')
-		str[i--] = s2[j++];
+		str[i++] = s2[j++];
 	str[i] = '\0';
 	return (str);
 }
