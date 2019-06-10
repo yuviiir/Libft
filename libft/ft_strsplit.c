@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 07:07:26 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/10 07:07:47 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/10 22:10:37 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 char	**ft_strsplit(char const *s, char c)
 {
 	char 	**str;
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	int 	count;
 	
 	count = 0;
@@ -27,25 +27,27 @@ char	**ft_strsplit(char const *s, char c)
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
+		{
+			if (s[i + 1] != c && s[i + 1] != '\0')
 			len++;
+		}
 		i++;
 	}
 	if (!(str = (char **)malloc(len + 1)))
 		return (NULL);
 	i = 0;
+
 	while (s[i] != '\0')
 	{
-		while (len > 0)
-		{
-			if (s[i] != c)
+		if (s[i] != c)
 				str[count][i] = s[i];
-			else
+		else 
+			if (s[i + 1] != c && s[i + 1] != '\0')
 			{
 				count++;
 				len--;
 			}
 			i++;
-		}
 	}
 	return (str);
 }
@@ -56,7 +58,7 @@ int	main(int ac, char **av)
 
 	if (ac == 3)
 	{
-		str = ft_strsplit(av[0], av[1][0]);
+		str = ft_strsplit(av[1], av[2][0]);
 		printf("%c\n%c",*str[0], *str[1]);
 	}
 }
