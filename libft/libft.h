@@ -6,12 +6,13 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:43:23 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/07 13:04:51 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/10 06:44:29 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>

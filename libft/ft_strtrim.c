@@ -6,12 +6,11 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 06:56:56 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/07 09:54:21 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/10 06:56:52 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s)
 {

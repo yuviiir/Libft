@@ -6,12 +6,11 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:41:37 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/05 12:59:37 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/10 06:49:16 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int		ft_len(int nb)
 {

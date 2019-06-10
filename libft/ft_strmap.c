@@ -6,12 +6,11 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 07:20:14 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/07 08:37:24 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/10 06:55:32 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
