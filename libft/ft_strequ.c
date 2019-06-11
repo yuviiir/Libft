@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 08:22:18 by ysharma           #+#    #+#             */
-/*   Updated: 2019/05/31 08:49:06 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/11 17:19:50 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@ int		ft_strequ(char const *s1, char const *s2)
 {
 	int		i;
 
-	if (s1 != NULL && s2 != NULL)
+	if (s1 && s2)
 	{
+		if (s1 < s2)
+			return (0);
 		i = 0;
-		while (s1[i] != '\0')
+		while (s1[i])
 		{
 			if (s1[i] != s2[i])
 				return (0);
-			else
-				i++;
+			i++;
 		}
-		return (1);
 	}
-	return (0);
+	return (1);
 }

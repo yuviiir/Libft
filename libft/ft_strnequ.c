@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 08:57:40 by ysharma           #+#    #+#             */
-/*   Updated: 2019/05/31 08:59:19 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/11 16:39:42 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	ft_strnequ(char const *s1, char const *s2, size_t n)
 			i++;
 			n--;
 		}
-		return (1);
 	}
-	return (0);
+	return (1);
 }

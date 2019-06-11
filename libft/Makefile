@@ -6,7 +6,7 @@
 #    By: ysharma <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/28 09:02:46 by ysharma           #+#    #+#              #
-#    Updated: 2019/06/10 07:06:32 by ysharma          ###   ########.fr        #
+#    Updated: 2019/06/11 14:35:43 by ysharma          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ all : $(NAME)
 
 $(NAME):
 	gcc -c -Wall -Werror -Wextra $(SRC)
-	ar rc $(NAME) *.o
+	ar rc $(NAME) $(OBJ)
 	rm -f $(OBJ)
 clean:
 	rm -f $(OBJ)
