@@ -6,13 +6,13 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:41:37 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/11 15:25:49 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/12 14:47:28 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_len(int nb)
+static int	ft_len(int nb)
 {
 	size_t	len;
 

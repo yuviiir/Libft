@@ -6,7 +6,7 @@
 #    By: ysharma <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/28 09:02:46 by ysharma           #+#    #+#              #
-#    Updated: 2019/06/11 14:35:43 by ysharma          ###   ########.fr        #
+#    Updated: 2019/06/12 15:27:44 by ysharma          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,18 +25,18 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	  ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 
-OBJ = $(SRC:$(S_PATH)%.c=%.o)
+OBJ = $(SRC:%.c=%.o)
 
 all : $(NAME)
 
 $(NAME):
 	gcc -c -Wall -Werror -Wextra $(SRC)
-	ar rc $(NAME) $(OBJ)
-	rm -f $(OBJ)
+	ar rcs $(NAME) $(OBJ)
+
 clean:
 	rm -f $(OBJ)
 
-fclean:
+fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
