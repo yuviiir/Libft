@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:43:23 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/12 14:24:58 by ysharma          ###   ########.fr       */
+/*   Updated: 2019/06/25 18:47:09 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,17 @@ char	*ft_strchr(const char *s, int c);
 
 int		ft_strcmp(const char *s1, const char *s2);
 
-char	*ft_strcpy(char *dst, char *src);
+char	*ft_strcpy(char *dst, const char *src);
 
 char	*ft_strdup(const char *str1);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 
@@ -72,7 +72,7 @@ int		ft_tolower(int c);
 
 int		ft_toupper(int c);
 
-char	*ft_itoa(int nb);
+char	*ft_itoa(int n);
 
 void	*ft_memalloc(size_t size);
 
