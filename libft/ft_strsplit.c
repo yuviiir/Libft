@@ -6,7 +6,7 @@
 /*   By: ysharma <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 07:07:26 by ysharma           #+#    #+#             */
-/*   Updated: 2019/06/25 19:59:24 by root             ###   ########.fr       */
+/*   Updated: 2019/06/26 06:58:52 by ysharma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	ft_wordcount(const char *s, char c)
 {
-	int	i;
-	int	count;
+	int		i;
+	int		count;
 
 	i = 0;
 	count = 0;
@@ -32,8 +32,8 @@ static int	ft_wordcount(const char *s, char c)
 
 static int	ft_wordlen(const char *s, char c)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 
 	i = 0;
 	len = 0;
@@ -44,7 +44,7 @@ static int	ft_wordlen(const char *s, char c)
 	return (len);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
@@ -53,11 +53,13 @@ char	**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	count = 0;
-	if (!s || !(str = (char **)malloc(sizeof(char*) * (ft_wordcount(s, c) + 1))))
+	if (!s || !(str = (char **)malloc(sizeof(char*)
+									* (ft_wordcount(s, c) + 1))))
 		return (NULL);
 	while (i < ft_wordcount(s, c))
 	{
-		if (!(str[i] = (char*)malloc(sizeof(char) * (ft_wordlen(&s[count], c) + 1))))
+		if (!(str[i] = (char*)malloc(sizeof(char)
+										* (ft_wordlen(&s[count], c) + 1))))
 			return (NULL);
 		j = 0;
 		while (s[count] == c)
